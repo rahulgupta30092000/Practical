@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const data= { 'products' : [
+        //     { 'Name': 'Cheese',
+        //     'Price' : 2.50, 
+        //     'Location': 'Refrigerated foods'
+        //     }, 
+        //     {
+        //    'Name': 'Crisps', 
+        //    'Price' : 3, 
+        //    'Location': 'the Snack isle'
+        //     },
+        //     {
+        //    'Name': 'Pizza', 
+        //    'Price' : 4, 
+        //    'Location': 'Refrigerated foods'
+        //     }, 
+        //     { 
+        //     'Name': 'Chocolate',
+        //     'Price' : 1.50,
+        //     'Location': 'the Snack isle'
+        //     },
+        //     { 
+        //     'Name': 'Self-raising flour', 
+        //     'Price' : 1.50,
+        //     'Location': 'Home baking'
+        //     }, 
+        //     { 
+        //     'Name': 'Ground almonds',
+        //      'Price' : 3, 
+        //      'Location': 'Home baking'
+        //     } 
+        // ]};
+        // localStorage.setItem("data",data);
+        // console.log(localStorage);
+        // let x=JSON.stringify(data)
+        // console.log(x);
+       
+
+    //      localStorage.setItem("productdata" ,JSON.stringify(data));
+    //      const storeData=JSON.parse(localStorage.getItem("productdata"));
+    //  console.log(storeData);
+
+
+
+     
+        // other way
+        
+         fetch("./product.json")
+        .then(results=>results.json())
+        .then(console.log)
+        .catch(error=>error)
+
+        // not working
+
+        // fetch("./product.json")
+        // .then(function(response){
+        //     return response.json
+        // })
+        // .then(function(product){
+        //     for(var i=0;i<product.length;i++){
+        //         console.log(product[i]);
+        //     }
+        // })
+        // .catch(function(err){
+        //     console.log(err);
+        // })
+    </script>
+</body>
+</html>

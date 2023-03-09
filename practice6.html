@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clousre function</h1>
+    <p>A closure can be defined as a JavaScript feature in which the inner function has access to the outer function variable. In JavaScript, every time a closure is created with the creation of a function.
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).</p>
+
+<script>
+    function makeFunc() {
+  let name = "Hello world";
+  function displayName() {   //it display all the surrounding of displayName function
+    console.log(name);
+
+  }
+  name="David"  //it take latest value
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+</script>
+    
+</body>
+</html>
