@@ -1,0 +1,336 @@
+var students=[{"StudentID":1,"StudentName":"Meghna"},
+
+               {"StudentID":2,"StudentName":"Reena"},
+
+               {"StudentID":3,"StudentName":"Rahul"}
+
+]
+
+ 
+
+var marks =
+
+[
+
+   {
+
+       "StudentID": 1,
+
+       "StudentName": "Rahul",
+
+       "StudentImage": "https://d2c967qfslpzim.cloudfront.net/images/img1.jpg",
+
+       "Address": "Ahmedabad",
+
+       "DOB": "1980-02-9",
+
+       "Subjects": {
+
+           "Hindi": {
+
+               "Internal": 90,
+
+               "External": 100
+
+           },
+
+           "English": {
+
+               "Internal": 90,
+
+               "External": 100
+
+           },
+
+           "Math": {
+
+               "Internal": 90,
+
+               "External": 100
+
+           },
+
+           "Science": {
+
+               "Internal": 40,
+
+               "External": 50
+
+           }
+
+       }
+
+   },
+
+   {
+
+       "StudentID": 2,
+
+       "StudentName": "Rita",
+
+       "StudentImage": "https://d2c967qfslpzim.cloudfront.net/images/img2.jpg",
+
+       "Address": "Ahmedabad",
+
+       "DOB": "1987-02-9",
+
+       "Subjects": {
+
+           "Hindi": {
+
+               "Internal": 30,
+
+               "External": 100
+
+           },
+
+           "English": {
+
+               "Internal": 80,
+
+               "External": 100
+
+           },
+
+           "Math": {
+
+               "Internal": 70,
+
+               "External": 40
+
+           },
+
+           "Science": {
+
+               "Internal": 40,
+
+               "External": 50
+
+           }
+
+       }
+
+   },
+
+   {
+
+       "StudentID": 3,
+
+       "StudentName": "Rohan",
+
+       "StudentImage": "https://d2c967qfslpzim.cloudfront.net/images/img3.jpg",
+
+       "Address": "Ahmedabad",
+
+       "DOB": "1987-02-9",
+
+       "Subjects": {
+
+           "Hindi": {
+
+               "Internal": 30,
+
+               "External": 60
+
+           },
+
+           "English": {
+
+               "Internal": 80,
+
+               "External": 60
+
+           },
+
+           "Math": {
+
+               "Internal": 35,
+
+               "External": 40
+
+           },
+
+           "Science": {
+
+               "Internal": 40,
+
+               "External": 50
+
+           }
+
+       }
+
+   }
+
+]
+
+ 
+
+Problem Statement:
+
+Gurgon Public School manually manages its students' data. They are searching for a web portal for analysis so they may access any student marksheets .With Reference to above variable perform following task.
+
+ 
+
+Features/Task
+
+1. Create one dynamic dropdown  (use students’ array notes: While creating options value attribute should be binded with StudentID and text with StudentName)
+
+2. Event-> Drop down change Event Marksheet for that student should be shown in the following format from the marks array. Kindly make a note that data should be dynamic.
+
+ 
+
+Format of the marksheet as follows.
+
+ 
+
+ 
+
+	
+
+Name
+
+	
+
+Rahul
+
+
+
+
+Address
+
+	
+
+Ahmedabad
+
+
+
+
+Date of Birth
+
+	
+
+Feb-23-1990
+
+
+
+
+Subject
+
+	
+
+Internal
+
+	
+
+External
+
+	
+
+Total(30% weightage Internal 70% External Weightage)
+
+
+
+
+Hindi
+
+	
+
+30
+
+	
+
+60
+
+	
+
+51
+
+
+
+
+English
+
+	
+
+80
+
+	
+
+60
+
+	
+
+66
+
+
+
+
+Math
+
+	
+
+35
+
+	
+
+40
+
+	
+
+38.5
+
+
+
+
+Science
+
+	
+
+40
+
+	
+
+50
+
+	
+
+47
+
+
+
+
+ 
+
+	
+
+ 
+
+	
+
+Average
+
+	
+
+50.6
+
+
+
+
+ 
+
+	
+
+ 
+
+	
+
+Result
+
+	
+
+Pass
+
+ 
+
+Result formula: average>=50 Pass otherwise fail
